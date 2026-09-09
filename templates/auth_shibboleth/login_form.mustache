@@ -62,6 +62,8 @@
 
 <div class="my-1 my-sm-5"></div>
 <div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6">
     <div class="card">
         <h2 class="card-header">
             {{#loginname}}{{.}}{{/loginname}}
@@ -73,7 +75,7 @@
                     <form action="{{loginurl}}" method="post" id="login">
                         <div class="mb-3">
                             <label for="idp">{{#str}}auth_shibboleth_select_organization, auth_shibboleth{{/str}}</label>
-                            <select id="idp" name="idp" class="form-control form-select input-block-level {{^isvalid}}is-invalid{{/isvalid}}">
+                            <select id="idp" name="idp" class="form-control form-select input-block-level w-75 {{^isvalid}}is-invalid{{/isvalid}}">
                                 <option value="-">{{#str}}auth_shibboleth_select_member, auth_shibboleth{{/str}}</option>
                                 {{#idps}}
                                     <option value="{{value}}" {{#selected}}selected{{/selected}}>{{name}}</option>
@@ -126,4 +128,6 @@
             </div>
         </div>
     {{/showinstructions}}
+</div>
+</div>
 </div>
