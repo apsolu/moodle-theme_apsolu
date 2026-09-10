@@ -95,7 +95,7 @@
 
 <div class="loginform container">
   <div class="row justify-content-md-center">
-    <div id="apsolu-loginform-main-div" class="col col-4">
+    <div id="apsolu-loginform-main-div" class="col col-5">
     {{#logourl}}
         <div id="loginlogo" class="login-logo text-center">
             <img id="logoimage" src="{{logourl}}" class="img-fluid" alt="{{sitename}}"/>
@@ -181,13 +181,13 @@
             </div>
         </div>
     </div>
-    {{#hasinstructions}}
+    {{#hasauthinstructions}}
         <div class="login-divider"></div>
         <div class="login-instructions {{#cansignup}}mb-3{{/cansignup}}">
             <h2 class="login-heading">{{#str}}firsttime{{/str}}</h2>
             {{{instructions}}}
         </div>
-    {{/hasinstructions}}
+    {{/hasauthinstructions}}
     {{#cansignup}}
         <div class="login-signup mt-4">
             <a class="btn btn-secondary" href="{{signupurl}}">{{#str}}startsignup{{/str}}</a>
