@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/apsolu/theme_apsolu/actions/workflows/moodle-ci.yml/badge.svg?branch=main)](https://github.com/apsolu/theme_apsolu/actions)
 [![Coverage Status](https://coveralls.io/repos/github/apsolu/theme_apsolu/badge.svg?branch=main)](https://coveralls.io/github/apsolu/theme_apsolu?branch=main)
-[![Moodle Status](https://img.shields.io/badge/moodle-5.0-blue)](https://moodle.org)
+[![Moodle Status](https://img.shields.io/badge/moodle-5.2-blue)](https://moodle.org)
 
 ## Description
 
@@ -22,7 +22,7 @@ Ce thème ajoute :
 
 ```bash
 cd /your/moodle/path
-git clone https://github.com/apsolu/theme_apsolu theme/apsolu
+git clone https://github.com/apsolu/moodle-theme_apsolu theme/apsolu
 php admin/cli/upgrade.php
 ```
 
