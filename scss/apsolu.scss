@@ -956,6 +956,15 @@ body.limitedwidth #page.drawers .main-inner {
     font-weight: 300;
 }
 
+.badge.bg-custom {
+    background-color: rgba(var(--apsolu-color-custom-3-rgb));
+    opacity: var(--bs-bg-opacity);
+    color : $apsolu-light;
+    & i {
+        margin: 0 5px 0 0;
+    }
+}
+
 /* Styles pour la barre de défilement. */
 // Firefox.
 * {
