@@ -222,8 +222,8 @@ class renderer extends \core_user\output\myprofile\renderer {
                     $category->add_node($node);
                 }
 
-                // Cards.
-                $cards = Payment::get_user_cards($userid);
+                // Affiche toutes les cartes réglées ainsi que les cartes dûes.
+                $cards = Payment::get_user_settled_cards($userid) + Payment::get_user_cards($userid);
                 $paymentsimages = Payment::get_statuses_images();
                 if (count($cards) > 0) {
                     $content = '<ul>';
