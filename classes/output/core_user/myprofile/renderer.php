@@ -214,7 +214,7 @@ class renderer extends \core_user\output\myprofile\renderer {
 
                 // Numéro FFSU.
                 $adhesion = $DB->get_record('apsolu_federation_adhesions', ['userid' => $userid]);
-                if ($adhesion !== false && empty($adhesion->federationnumber) === false) {
+                if ($adhesion !== false && empty($adhesion->timelicensed) === false) {
                     $field = 'apsolufederationnumber';
                     $title = get_string('federation_number', 'local_apsolu');
                     $content = $adhesion->federationnumber;
