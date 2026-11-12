@@ -109,6 +109,8 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
+    // TODO: à supprimer lorsque Moodle 5.2 ne sera plus supporté par APSOLU.
+    'useprimarymoremenu' => $CFG->branch > 502,
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/drawers', $templatecontext);

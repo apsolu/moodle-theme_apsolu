@@ -52,6 +52,8 @@ $templatecontext = [
     'menu' => $menu,
     'homepage_section2_association_text' => get_config('theme_apsolu', 'homepage_section2_association_text'),
     'homepage_section2_practice_text' => get_config('theme_apsolu', 'homepage_section2_practice_text'),
+    // TODO: à supprimer lorsque Moodle 5.2 ne sera plus supporté par APSOLU.
+    'useprimarymoremenu' => $CFG->branch > 502,
 ];
 
 echo $OUTPUT->render_from_template('theme_apsolu/home', $templatecontext);

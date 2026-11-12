@@ -79,7 +79,13 @@
     {{#isloggedin}}
         {{#menu}}
         <div class="primary-navigation">
+            {{#useprimarymoremenu}}
+            {{> core/primarymoremenu}}
+            {{/useprimarymoremenu}}
+            {{^useprimarymoremenu}}
+            {{! TODO: à supprimer lorsque Moodle 5.2 ne sera plus supporté par APSOLU. }}
             {{> core/moremenu}}
+            {{/useprimarymoremenu}}
         </div>
         {{/menu}}
     {{/isloggedin}}
