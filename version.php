@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 // This is the version of the plugin.
-$plugin->version = 2026101400;
+$plugin->version = 2026111600;
 
-$plugin->release = '5.2.4';
+$plugin->release = '5.2.5';
 
 // Requires Moodle 5.2.0.
 $plugin->requires = 2026042000;
@@ -45,5 +45,5 @@ $plugin->supported = [502, 502];
 
 // This is a list of plugins, this plugin depends on (and their versions).
 $plugin->dependencies = [
-    'local_apsolu' => '2026101400',
+    'local_apsolu' => '2026111600',
 ];
